@@ -46,8 +46,8 @@ Ensure that all necessary libraries are installed and that the model weights are
    - The results are saved directly in the Data folder.
    - Individual Action Files: For each action, an individual file is created that contains the computed angles.
    - Consolidated Files: Two consolidated files are created:
-   - MotionBERT_processed: Contains data processed from MotionBERT's output, where the first frame's data has been subtracted from the rest of the frames in each action sequence to reduce initial bias.
-   - Ground_Truth_Processed: Similar processing is applied to the ground truth data, with the first frame's data subtracted from the subsequent frames to address initial bias.
+   - Ground_Truth_Angles_Processed/MotionBERT_Angles_Processed: Contains data processed from MotionBERT's output, where the first frame's data has been subtracted from the rest of the frames in each action sequence to reduce initial bias.
+   - Ground_Truth_Angles/MotionBERT_Angles: Absolute Angles.
      
 6. **Evaluate MPJAE**:
-   - Run `Calculate_MPJAE.py` to calculate the Mean Per Joint Angle Error (MPJAE) between ground truth and MotionBERT's predicted results. The output will be stored in the Data folder in Excel format. 
+   - Run `Calculate_MPJAE.py` to calculate the Mean Per Joint Angle Error (MPJAE) between ground truth and MotionBERT's predicted results. You can choose whether you want to use processed angles or absolute angles and modify the code accordingly (For thesis I used processed angles). The output will be stored in the Data folder in Excel format. 
