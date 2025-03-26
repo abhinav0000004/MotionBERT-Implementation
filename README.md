@@ -42,7 +42,7 @@ Ensure that all necessary libraries are installed and that the model weights are
    - Adjust directories in the main script.
    - Execute the script to generate 3D pose output (NPY files) from 2D JSON outputs, stored in `Data/MotionBERT 3D Output`.
 5. **Calculate Angles**:
-   - Execute `Calculate Angles.py` to compute various angles.
+   - Execute `Calculate_Angles.py` to compute various angles.
    - The results are saved directly in the Data folder.
    - Individual Action Files: For each action, an individual file is created that contains the computed angles.
    - Consolidated Files: Two consolidated files are created:
@@ -50,4 +50,4 @@ Ensure that all necessary libraries are installed and that the model weights are
    - Ground_Truth_Processed: Similar processing is applied to the ground truth data, with the first frame's data subtracted from the subsequent frames to address initial bias.
      
 6. **Evaluate MPJAE**:
-   - Run `Calculate MPJAE.py` to calculate the Mean Per Joint Angle Error (MPJAE) between ground truth and MotionBERT's predicted results. The output will be stored in the Data folder in Excel format. 
+   - Run `Calculate_MPJAE.py` to calculate the Mean Per Joint Angle Error (MPJAE) between ground truth and MotionBERT's predicted results. The output will be stored in the Data folder in Excel format. 
